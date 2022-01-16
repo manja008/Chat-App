@@ -64,9 +64,7 @@ export default function App() {
 // handeling messages
     room.on('message', message => {
       
-      const {data, id, member, timestamp} = message;
-
-        console.log(message);
+      const {data, id, member} = message;
 
         let msgs = messages; 
         msgs.push({member: member, text: data, id:id}); 

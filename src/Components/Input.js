@@ -14,7 +14,7 @@ const changeText =(e)=>{
 }
 
 const handleSubmit =(e)=>{
-    e.preventDefault(); // must as we have no server to send
+    e.preventDefault(); // must as we have no server
     onSendMessage(text);
     setText('');
 }
@@ -29,7 +29,8 @@ return (
             type='text'
             placeholder='"Lets chat"'
             autoFocus={true}
-            ></input>
+            >
+            </input>
             <button type="submit" className="inputBtn" onSubmit={handleSubmit}>
                 <FontAwesomeIcon icon={faPaperPlane} />
             </button>
