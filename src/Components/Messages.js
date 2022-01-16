@@ -7,7 +7,7 @@ export default class Messages extends Component {
     const {messages} = this.props;
 
     return (
-      <ul className="messages-list">
+      <ul className="Messages-list">
         {messages.map(message=> this.renderMessage(message))}
       </ul>
     );
